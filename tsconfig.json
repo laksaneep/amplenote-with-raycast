@@ -1,0 +1,20 @@
+{
+  "$schema": "https://json.schemastore.org/tsconfig",
+  "display": "Node 18",
+  "include": ["src/**/*", "raycast-env.d.ts", ".env"],
+  "typeRoots": ["./process-env.d.ts", "./node_modules/@types"],
+  "compilerOptions": {
+    "lib": ["es2021"],
+    "types": ["node"],
+    "module": "commonjs",
+    "target": "es2021",
+    "strict": true,
+    "moduleResolution": "node",
+    "isolatedModules": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "jsx": "react-jsx",
+    "resolveJsonModule": true
+  }
+}
