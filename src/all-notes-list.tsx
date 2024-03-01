@@ -52,5 +52,4 @@ function getService(serviceName: string): Service {
 interface Service {
   authorize(): Promise<void>;
   fetchItems(): Promise<{ id: string; title: string }[]>;
-  // addNewTask(): Promise<void>;
 }

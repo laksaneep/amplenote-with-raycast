@@ -1,26 +1,9 @@
 import { OAuth } from "@raycast/api";
 import fetch from "node-fetch";
 import { get } from "lodash";
-// import config from "../../config";
-import { CLIENT_ID, INBOX_ID } from "../../config";
-
-// import dotenv from "dotenv";
-// dotenv.config();
-
-// import dotenv from "dotenv";
-
-// // Parsing the env file.
-// // dotenv.config({ path: path.join(__dirname, "/.env") });
-
-// const processEnv: { [key: string]: any } = {};
-
-// dotenv.config({ processEnv });
-
-// console.log("CLIENT_ID", CLIENT_ID); // Universee
-// console.log("INBOX_ID", INBOX_ID); // Universee
 
 // key
-const clientId = "9869b44f590df799ba8d8b272233155bbc8f870436ab23d5ad75a76fde4a7031";
+const clientId = "Your cliend-id";
 console.log("----- clidntId  :", clientId);
 
 const client = new OAuth.PKCEClient({
@@ -32,9 +15,9 @@ const client = new OAuth.PKCEClient({
 });
 
 // Inbox note id
-const uuidNotes = "16bb98ba-d04c-11ee-a79d-260f5e6888ec";
-// Authorization
+const uuidNotes = "Your inbox-note id";
 
+// Authorization
 export async function authorize(): Promise<void> {
   const tokenSet = await client.getTokens();
   if (tokenSet?.accessToken) {
